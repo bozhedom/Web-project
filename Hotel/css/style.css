@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 1169px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-left-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-container {
+    display: flex;
+}
+
+.logo-tel {
+    margin-right: auto;
+}
+
+.header-all {
+    display: flex;
+}
+
+nav {
+    margin-right: 56px;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.btn-list {
+    display: flex;
+    margin-left: 77px;
+}
+
+.btn-item:not(:last-child){
+    margin-right: 80px;
+}
+
+.header {
+    height: 154px;
+    
+}
