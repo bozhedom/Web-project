@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="header">
+            <div class="avatar"><img src="image.png" class="avatar_inside"></div>
+            <button class="btnbell"><img src="bell.png" width="55px"></button>
+            <div class="search">
+                <form><input type="text" class="search_place" placeholder="Поиск по сайту">
+                    <img class="search_img" src="search.png">
+                </form>
+            </div>
+            <img class="sber_logo" src="sberlogo.png">
+        </div>
+
+
+        <div class="profile">
+            <div class="profile_name">Герман Германский</div>
+        </div>
+        <div class="nav_specs">
+            <div class="nav_elem">Главная Германии</div>
+            <div class="nav_elem">Мои клиенты</div>
+            <div class="nav_elem">Отчет по встречам</div>
+            <div class="nav_elem">Календарь</div>
+        </div>
+
+        <div class="current_nav_title">Ближайшая встреча</div>
+        <div class="current_nav_main">
+            <img class="pencil" src="pencil.png" alt="">
+            <!-- <div class="current_nav_elem_klient">Клиент</div>
+            <div class="current_nav_elem_Kont_litso">Контактное лицо</div>
+            <div class="current_nav_elem_phone">Телефон</div> -->
+            <div class="current_nav_elem_theme">Тема встречи</div>
+            <!-- <div class="current_nav_elem_themes"> fddfdfs</div> -->
+            <div class="current_nav_elem_data">Дата</div>
+            <!-- <div class="current_nav_elem_datas">Дата</div> -->
+            <div class="current_nav_elem_place">Место</div>
+            <!-- <div class="current_nav_elem_places">Место</div> -->
+            <div class="current_nav_elem_time">Время</div>
+            <!-- <div class="current_nav_elem_times">Время</div> -->
+
+        </div>
+
+        <a href="#zatemnenie">
+            <div class="current_nav_add">
+                <div class="current_nav_add_text">Добавить встречу</div>
+            </div>
+        </a>
+
+
+
+        <div class="meet_list_title">Список встреч</div>
+        <div class="meet_list_list2"></div>
+        <ul type="none" class="meet_list_list">
+            <!-- <li class="meet_list_elem">
+                <div class="meet_list_elem_data">Дата</div>
+                <div class="meet_list_elem_time">Время</div>
+                <div class="meet_list_elem_place">Место</div>
+                <div class="meet_list_elem_theme">Тема встречи</div> 
+                <div class="meet_list_elem_klient">Клиент</div>
+            </li>
+            <li class="meet_list_elem">
+                <div class="meet_list_elem_data">Дата</div>
+                <div class="meet_list_elem_time">Время</div>
+                <div class="meet_list_elem_place">Место</div>
+                <div class="meet_list_elem_theme">Тема встречи</div> 
+                <div class="meet_list_elem_klient">Клиент</div>
+            </li>
+            <li class="meet_list_elem">
+                <div class="meet_list_elem_data">Дата</div>
+                <div class="meet_list_elem_time">Время</div>
+                <div class="meet_list_elem_place">Место</div>
+                <div class="meet_list_elem_theme">Тема встречи</div> 
+                <div class="meet_list_elem_klient">Клиент</div>
+            </li>
+            <li class="meet_list_elem">
+                <div class="meet_list_elem_data">Дата</div>
+                <div class="meet_list_elem_time">Время</div>
+                <div class="meet_list_elem_place">Место</div>
+                <div class="meet_list_elem_theme">Тема встречи</div> 
+                <div class="meet_list_elem_klient">Клиент</div>
+            </li>
+            <li class="meet_list_elem">
+                <div class="meet_list_elem_data">Дата</div>
+                <div class="meet_list_elem_time">Время</div>
+                <div class="meet_list_elem_place">Место</div>
+                <div class="meet_list_elem_theme">Тема встречи</div> 
+                <div class="meet_list_elem_klient">Клиент</div>
+            </li> -->
+        </ul>
+    </div>
+
+    <div id="zatemnenie">
+        <div id="okno">
+
+            <div class="tab">
+                <div class="qw">
+                    <button class="tablinks" onclick="openMeet(event, 'klient')" id="defaultOpen">Встреча с
+                        клиентом</button>
+                </div>
+                <div class="wq">
+                    <button class="tablinks" onclick="openMeet(event, 'stuff')">Встреча с сотрудником</button>
+                </div>
+                
+            </div>
+
+
+
+            <div id="klient" class="tabcontent">
+                <div class="klient_text">Клиент</div><input class="klient_input" type="text" id="client">
+                <div class="litso_text">Контактное лицо</div><input class="litso_input" type="text" id="contact_lico">
+                <div class="dolj_text">Должность</div><input class="dolj_input" type="text" id="dolj">
+                <div class="theme_text">Тема</div><input class="theme_input" type="text" id="theme">
+                <div class="data_text">Дата</div><input class="data_input" type="date" name="calendar" max="2060-12-31"
+                    min="2000-01-01" id="data">
+                <div class="time_text">Время</div><input class="time_input1" type="time" value="16:00" id="time-start">
+                <input class="time_input2" type="time" value="18:00" id="time-end">
+                <div class="place_text">Место</div><input class="place_input" type="text" id="place">
+            </div>
+
+            <div id="stuff" class="tabcontent">
+                <div class="klient_text">Сотрудник</div><input class="klient_input" type="text">
+                <div class="litso_text">ЭНИФИНГ эЛС??</div><input class="litso_input" type="text">
+                <div class="dolj_text">Должность</div><input class="dolj_input" type="text">
+                <div class="theme_text">Тема</div><input class="theme_input" type="text">
+                <div class="data_text">Дата</div><input class="data_input" type="date" name="calendar" max="2060-12-31"
+                    min="2000-01-01">
+                <div class="time_text">Время</div><input class="time_input1" type="time" value="16:00">
+                <input class="time_input2" type="time" value="18:00">
+                <div class="place_text">Место</div><input class="place_input" type="text">
+            </div>
+
+            <script>
+                function openMeet(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+
+                document.getElementById("defaultOpen").click();
+            </script>
+            <button class="savethisshit" onclick="sendJSON()" id="savethisshit">Сохранить</button>
+            
+            <a href="#" class="close">Отмена</a>
+        </div>
+    </div>
+
+    <div>
+        <button id="bronir3">
+            <h1>ОБНОВИТЬ</h1>
+        </button>
+    </div>
+    <div>
+        <button id="bronir2">
+            <h1>ОБНОВИТЬ</h1>
+        </button>
+    </div>
+    <div>
+        <button id="bronir2">
+            <h1>ОвывывБНОВИТЬ</h1>
+        </button>
+    </div>      
+    <script src="json.js"></script>
+</body>
+
+</html>
